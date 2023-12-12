@@ -61,6 +61,17 @@ else
 end
 
 %% Q2: Logical Bonus
-x = randi(10,100,1)
+X = randi(10,100,1)
+
+% (A)
 elem_btw_5_8=sum(X>5&X<8);
-elem_btw_5_8=sum(5<X<8);
+disp(elem_btw_5_8)
+
+% (B)
+elem_btw_5_8=sum(5<X<8); 
+disp(elem_btw_5_8)
+
+% The line (B) can be also written as elem_btw_5_8=sum((5<X)<8), 
+% that means that the array will mark as TRUE all elements wich are less than 8. 
+% But we want to count only the elements which have a value between 5 and
+% 8, so we need to use the first code.
